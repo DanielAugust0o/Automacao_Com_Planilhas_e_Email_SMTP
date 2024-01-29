@@ -52,7 +52,7 @@ def enviar_email():
         msg.attach(parte)
 
     # Configurar o SMTP e enviar o e-mail
-    senha = 'ioujfoldlfsbixvh'
+    senha = 'senha gerada no google'
     with smtplib.SMTP('smtp.gmail.com:587') as s:
         s.starttls()
         s.login(msg['From'], senha)
